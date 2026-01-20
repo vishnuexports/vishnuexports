@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vishnu Exports | Rice & Cocopeat Exporter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      margin:0;
-      background:#f4f6f8;
-      color:#333;
-    }
-    header{
-      background:#0a4db8;
-      color:#fff;
-      padding:30px 20px;
-      text-align:center;
-  
+<meta charset="UTF-8">
+<title>Vishnu Exports | Rice & Cocopeat Exporter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  
-    
-       style="display:inline-block;padding:12px 18px;
-       background:#25D366;color:white;
-       text-decoration:none;border-radius:6px;font-weight:bold;">
-       💬 
-    </
+<style>
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#f4f6f8;
+  color:#333;
+}
+header{
+  background:#0a4db3;
+  color:#fff;
+  padding:30px 15px;
+  text-align:center;
+}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+.box{
+  background:#fff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+h2{
+  color:#0a4db3;
+}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+.product{
+  border:1px solid #ddd;
+  border-radius:8px;
+  padding:10px;
+  text-align:center;
+}
+.product img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:6px;
+}
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  background:#0a4db3;
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:bold;
+}
+.btn.green{
+  background:#25D366;
+}
+footer{
+  background:#222;
+  color:#ccc;
+  text-align:center;
+  padding:15px;
+}
 
-  
+/* WhatsApp floating button */
+.whatsapp-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:30px;
+  text-decoration:none;
+  box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+.lang-switch{
+  text-align:center;
+  margin-top:10px;
+}
+</style>
 
-  <p>
-    <a href="vishnu_exports_FINAL.pdf"
-       style="display:inline-block;padding:12px 18px;
-       background:#0a4db8;color:white;
-       text-decoration:none;border-radius:6px;font-weight:bold;">
-       📄 Download Company Profile (PDF)
-    </a>
-  </p>
-</div>
-    section{
-      <div class="box contact">
-          <h2>Quick Contact / త్వరిత సంప్రదింపు</h2>
-
-            <p>
-                <a href="https://wa.me/919550011002"
-                       style="display:inline-block;padding:12px 18px;
-                              background:#25D366;color:white;
-                                     text-decoration:none;border-radius:6px;font-weight:bold;">
-                                           💬 WhatsApp Chat
-                                               </a>
-                                                 </p>
-
-                                                   <p>
-                                                       <a href="vishnu_exports_FINAL.pdf"
-                                                              style="display:inline-block;padding:12px 18px;
-                                                                     background:#0a4db8;color:white;
-                                                                            text-decoration:none;border-radius:6px;font-weight:bold;">
-                                                                                  📄 Download Company Profile (PDF)
-                                                                                      </a>
-                                                                                        </p>
-                                                                                        </div>
-      padding:30px 20px;
-      max-width:1000px;
-      margin:auto;
-    }
-    h2{
-      color:#0a4db8;
-    }
-    .box{
-      background:#fff;
-      padding:20px;
-      margin:15px 0;
-      border-radius:8px;
-      box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    }
-    footer{
-      background:#0a4db8;
-      color:#fff;
-      text-align:center;
-      padding:15px;
-    }
-    .contact p{
-      line-height:1.8;
-    }
-  </style>
+<script>
+function switchLang(lang){
+  document.getElementById("en").style.display = lang==="en"?"block":"none";
+  document.getElementById("te").style.display = lang==="te"?"block":"none";
+}
+</script>
 </head>
 
 <body>
@@ -90,71 +105,86 @@
 <header>
   <h1>VISHNU EXPORTS</h1>
   <p>Rice & Cocopeat Export Merchant – India</p>
+
+  <div class="lang-switch">
+    <button onclick="switchLang('en')">English</button>
+    <button onclick="switchLang('te')">తెలుగు</button>
+  </div>
 </header>
 
-<section>
+<section id="en">
 
-  <div class="box">
-    <h2>About Us</h2>
-    <p>
-      Vishnu Exports is a trusted export merchant from India,
-      supplying premium quality Rice and Cocopeat to international markets.
-      We focus on quality products, transparent business, and timely delivery.
-    </p>
-  </div>
+<div class="box">
+<h2>About Us</h2>
+<p>
+Vishnu Exports is a trusted export merchant from India, supplying premium quality Rice and Cocopeat to international markets with transparent business and timely delivery.
+</p>
+</div>
 
-  <div class="box">
-    <h2>Our Products</h2>
+<div class="box">
+<h2>Rice Products</h2>
+<div class="products">
+  <div class="product"><img src="https://images.unsplash.com/photo-1586201375754-1421e0aa2ad5"><p>Sona Masuri Rice</p></div>
+  <div class="product"><img src="https://images.unsplash.com/photo-1604909053734-0a6dbed9c3e6"><p>IR64 Rice</p></div>
+  <div class="product"><img src="https://images.unsplash.com/photo-1627485937980-221c88ac04c8"><p>Raw Rice</p></div>
+  <div class="product"><img src="https://images.unsplash.com/photo-1590080876201-6f7a4a7eaf79"><p>Steam Rice</p></div>
+</div>
+</div>
 
-    <h3>🍚 Rice Varieties</h3>
-    <ul>
-      <li>Sona Masuri Rice</li>
-      <li>IR64 Rice</li>
-      <li>Raw Rice</li>
-      <li>Steam Rice</li>
-    </ul>
+<div class="box">
+<h2>Cocopeat Products</h2>
+<ul>
+<li>5 KG Cocopeat Blocks</li>
+<li>Low EC Cocopeat</li>
+<li>High EC Cocopeat</li>
+<li>Washed & Unwashed Cocopeat</li>
+</ul>
+</div>
 
-    <h3>🌱 Cocopeat Products</h3>
-    <ul>
-      <li>5 KG Cocopeat Blocks</li>
-      <li>Low EC Cocopeat</li>
-      <li>High EC Cocopeat</li>
-      <li>Washed & Unwashed Cocopeat</li>
-    </ul>
-  </div>
-
-  <div class="box">
-    <h2>Export Support</h2>
-    <ul>
-      <li>Commercial Invoice</li>
-      <li>Packing List</li>
-      <li>Phytosanitary Certificate</li>
-      <li>Fumigation Certificate</li>
-      <li>Certificate of Origin (COO)</li>
-      <li>Bill of Lading (BL)</li>
-    </ul>
-  </di
-
-
-  <div class="box contact">
-    <h2>Contact Us</h2>
-    <p><strong>Company:</strong> Vishnu Exports</p>
-    <p><strong>Mobile / WhatsApp:</strong> +91 9550011002</p>
-    <p><strong>Email:</strong> vishnu11005@gmail.com</p>
-    <p><strong>Address:</strong><br>
-      Suvartamma Badi Street,<br>
-      Kavali Town,<br>
-      Nellore District,<br>
-      Andhra Pradesh – 524201,<br>
-      India
-    </p>
-  </div>
+<div class="box">
+<h2>Company Profile</h2>
+<a class="btn" href="vishnu_exports_FINAL.pdf" download>Download PDF</a>
+</div>
 
 </section>
 
+<section id="te" style="display:none;">
+
+<div class="box">
+<h2>మా గురించి</h2>
+<p>
+విష్ణు ఎక్స్‌పోర్ట్స్ భారత్ నుండి నాణ్యమైన బియ్యం మరియు కోకోపీట్‌ను అంతర్జాతీయ మార్కెట్లకు ఎగుమతి చేసే విశ్వసనీయ సంస్థ.
+</p>
+</div>
+
+<div class="box">
+<h2>మా ఉత్పత్తులు</h2>
+<ul>
+<li>సోనా మసూరి బియ్యం</li>
+<li>IR64 బియ్యం</li>
+<li>రా రైస్</li>
+<li>స్టీమ్ రైస్</li>
+<li>5 KG కోకోపీట్ బ్లాక్స్</li>
+</ul>
+</div>
+
+</section>
+
+<section class="box">
+<h2>Contact Us</h2>
+<p><strong>Mobile / WhatsApp:</strong> +91 9550011002</p>
+<p><strong>Email:</strong> vishnu11005@gmail.com</p>
+<p><strong>Address:</strong><br>
+Suvarthamma Badi Street,<br>
+Kavali, Nellore District,<br>
+Andhra Pradesh – 524201, India</p>
+</section>
+
 <footer>
-  © 2026 Vishnu Exports. All Rights Reserved.
+© 2026 Vishnu Exports. All Rights Reserved.
 </footer>
+
+<a class="whatsapp-float" href="https://wa.me/919550011002" target="_blank">💬</a>
 
 </body>
 </html>
